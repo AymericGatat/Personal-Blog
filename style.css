@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    margin: 0;
+}
+
+/*====================== BODY =====================*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/*====================== HEADER ================*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 1290px;
+    height: 49px;
+    margin: 40px 90px;
+}
+
+header .titre h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+header nav ul li {
+    margin: 0 14px;
+    transition: .4s ease-in;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    color: #70747D;
+    transition: .4s ease-in;
+}
+
+header .box_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .box_header .email {
+    display: flex;
+    align-items: center;
+    width: 265px;
+    height: 49px;
+    background-color: #F3F5F7;
+    border-radius: 5px;
+    margin-right: 24px;
+    padding: 0 0 0 24px;
+}
+
+header .box_header .email input {
+    background-color: transparent;
+    border: none;
+    color: #70747D;
+    margin: 0 6px;
+}
+
+header .box_header .email label {
+    display: flex;
+    align-items: center;
+}
+
+header .box_header .email label img {
+    margin: 0 6px;
+}
+
+header .box_header .post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 49px;
+    border-radius: 5px;
+    background: black;
+}
+
+header .box_header .post a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*================================== Main ==============================*/
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*Reseau*/
+
+main .reseau {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 160px;
+    height: 346px;
+}
+
+main .reseau .liste1,
+.reseau .liste2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 160px;
+    height: 149px;
+}
+
+main .reseau .liste1 li {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 47px;
+}
+
+main .reseau .liste2 li {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 47px;
+}
+
+main .reseau .barre_grise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    width: 160px;
+    height: 1px;
+    background: #DEDEDE;
+}
+
+main .reseau ul li a {
+    font-size: 16px;
+    color: #70747D;
+    margin: 12px;
+}
+
+/*partie blog*/
+/*partie droite*/
+
+main .parti_droite {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .parti_droite .recherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #DEDEDE;
+    width: 160px;
+    height: 53px;
+    margin-bottom: 15px;
+}
+
+main .parti_droite .recherche p {
+    color: #70747D;
+}
+
+main .parti_droite .recherche .button {
+    border: 1px solid #DEDEDE;
+    box-shadow: 0 0 1px 1px #DEDEDE;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+main .parti_droite .barre_grise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    width: 112px;
+    height: 1px;
+    background: #DEDEDE;
+}
+
+main .parti_droite .projets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-araound;
+    align-items: center;
+    width: 160px;
+    height: 247px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #DEDEDE;
+    margin-top: 15px;
+}
+
+main .parti_droite .projets h5,
+.projets ul {
+    width: 112px;
+}
+
+main .parti_droite .projets h5 {
+    font-size: 16px;
+    height: 19px;
+    margin: 24px 24px 16px 24px;
+}
+
+main .parti_droite .projets ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 147px;
+    margin: 16px 24px 24px 24px;
+}
+
+main .parti_droite .projets ul li {
+    width: 112px;
+    height: 24px;
+    margin: 4.5px 0;
+}
+
+main .parti_droite .projets ul li a {
+    position: relative;
+    font-size: 16px;
+    left: -10px;
+    color: #70747D;
+}
+
+/*=============================== POSTS =========================*/
+
+main section .posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 820px;
+    height: 710px;
+    margin: auto 60px;
+}
+
+main section .posts #img_post {
+    width: 480px;
+    height: 140px;
+    padding: 24px 0;
+    overflow: hidden;
+    margin-left: 36px;
+}
+
+main section .posts #img_post img {
+    width: 480px;
+}
+
+main section .posts .post_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 480px;
+    height: 188px;
+    margin-bottom: 36px;
+    margin-left: 36px;
+}
+
+main section .posts .post_1 p {
+    color: #70747D;
+}
+
+main section .posts .post_1 .info_post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 32px;
+}
+
+
+main section .posts .post_1 .info_post p,
+.post_1 .info_post h6,
+.post_1 .info_post span {
+    font-size: 14px;
+    text-align: center;
+}
+
+main section .posts .post_1 .info_post p,
+.post_1 .info_post span {
+    color: #70747D;
+}
+
+main section .posts .post_1 h6 {
+    margin: 0 0 0 10px;
+}
+
+main section .posts .post_1 .info_post span {
+    transform: translateY(-3px);
+    margin: 0 10px;
+}
+
+main section .posts .post_1 img {
+    width: 32px;
+    height: 32px;
+}
