@@ -15,14 +15,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: 98vw;
 }
 
 /*====================== HEADER ================*/
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 1290px;
@@ -111,6 +111,7 @@ main {
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
+    width: 1290px;
 }
 
 /*Reseau*/
@@ -122,6 +123,7 @@ main .reseau {
     flex-direction: column;
     width: 160px;
     height: 346px;
+    margin: 0;
 }
 
 main .reseau .liste1,
@@ -172,6 +174,7 @@ main .parti_droite {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    width: 160px;
 }
 
 main .parti_droite .recherche {
@@ -256,3 +259,97 @@ main .parti_droite .projets ul li a {
 }
 
 /*=============================== POSTS =========================*/
+main section {
+    padding: 0 50px;
+}
+
+main .posts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 820px;
+    height: 218px;
+    padding: 30px;
+    margin-bottom: 24px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px #DEDEDE;
+}
+
+main .posts .blog_post {
+    width: 480px;
+    height: 140px;
+    margin: 0;
+    margin-right: 36px;
+}
+
+main .posts .blog_post h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 150%;
+    width: 420px;
+    margin-bottom: 8px;
+}
+
+main .posts .blog_post p {
+    font-size: 16px;
+    color: #70747D;
+    width: 480px;
+    line-height: 150%;
+}
+
+main .posts .post_img {
+    width: 201px;
+    height: 140px;
+    margin: 0;
+}
+
+main .posts .post_info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 273px;
+    height: 32px;
+}
+
+main .posts .post_info img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+main .posts .post_info h3 {
+    font-size: 14px;
+}
+
+main .posts .post_info p {
+    font-size: 14px;
+    color: #70747D;
+}
+
+main .posts .post_info .point {
+    position: relative;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 17px;
+}
+
+main .posts .post_info .point::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 2px;
+    height: 2px;
+    background: #70747D;
+    border-radius: 50%;
+}
+
+main .posts .post_date p {
+    font-size: 16px;
+    color: #70747D;
+}
