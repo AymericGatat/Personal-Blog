@@ -293,8 +293,11 @@ main .posts .blog_post h2 {
 }
 
 main .posts .blog_post p {
-    font-size: 16px;
     color: #70747D;
+}
+
+main .posts .blog_post p {
+    font-size: 16px;
     width: 480px;
     line-height: 150%;
 }
@@ -353,3 +356,56 @@ main .posts .post_date p {
     font-size: 16px;
     color: #70747D;
 }
+
+main .annonce {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 820px;
+    height: 218px;
+    padding: 30px;
+    margin-bottom: 24px;
+    background-color: #F6CA45;
+}
+
+main .annonce .left_side {
+    display: flex;
+    flex-direction: column;
+    width: 394px;
+    height: 180px;
+}
+
+main .annonce .annonce_info {
+    width: 394px;
+    height: 107px;
+    margin-bottom: 24px;
+}
+
+main .annonce .annonce_info h2,
+.annonce_info p {
+    line-height: 150%;
+    max-height: 72px;
+}
+
+main .annonce .annonce_info h2 {
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+
+main .annonce .annonce_info p {
+    font-size: 16px;
+}
+
+main .annonce .annonce_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 275px;
+    height: 49px;
+}
+
+main .annonce .annonce_btn_learn {}
+
+main .annonce img {}
