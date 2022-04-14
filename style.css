@@ -260,7 +260,8 @@ main .parti_droite .projets ul li a {
 
 /*=============================== POSTS =========================*/
 main section {
-    padding: 0 50px;
+    margin: 0 1px;
+    padding: 0 40px;
 }
 
 main .posts {
@@ -268,9 +269,9 @@ main .posts {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    width: 820px;
-    height: 218px;
-    padding: 30px;
+    width: 810px;
+    height: 208px;
+    padding: 36px;
     margin-bottom: 24px;
     border: 1px solid #DEDEDE;
     border-radius: 5px;
@@ -358,15 +359,17 @@ main .posts .post_date p {
 }
 
 main .annonce {
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    width: 820px;
-    height: 218px;
-    padding: 30px;
+    width: 810px;
+    height: 208px;
+    padding: 36px;
     margin-bottom: 24px;
     background-color: #F6CA45;
+    box-sizing: content-box;
 }
 
 main .annonce .left_side {
@@ -400,12 +403,35 @@ main .annonce .annonce_info p {
 main .annonce .annonce_btn {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 275px;
     height: 49px;
 }
 
-main .annonce .annonce_btn_learn {}
+main .annonce .annonce_btn_visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 158px;
+    height: 49px;
+    border-radius: 5px;
+    background-color: #000;
+    margin-right: ;
+}
+
+main .annonce .annonce_btn_visited a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main .annonce .annonce_btn_learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 158px;
+    height: 49px;
+}
 
 main .annonce img {}
