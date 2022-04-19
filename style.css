@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 98vw;
+    width: 100%;
 }
 
 /*====================== HEADER ================*/
@@ -30,7 +30,8 @@ header {
     margin: 40px 90px;
 }
 
-header .titre h1 {
+header .titre h1,
+footer h1 {
     font-size: 16px;
     font-weight: bold;
 }
@@ -108,10 +109,11 @@ header .box_header .post a {
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     width: 1290px;
+    margin: 0 90px;
 }
 
 /*Reseau*/
@@ -362,14 +364,12 @@ main .annonce {
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-flow: row wrap;
     width: 810px;
     height: 208px;
     padding: 36px;
     margin-bottom: 24px;
     background-color: #F6CA45;
-    box-sizing: content-box;
 }
 
 main .annonce .left_side {
@@ -417,7 +417,6 @@ main .annonce .annonce_btn_visited {
     height: 49px;
     border-radius: 5px;
     background-color: #000;
-    margin-right: ;
 }
 
 main .annonce .annonce_btn_visited a {
@@ -434,4 +433,40 @@ main .annonce .annonce_btn_learn {
     height: 49px;
 }
 
-main .annonce img {}
+main .annonce .annonce_btn_learn a {
+    font-size: 14px;
+}
+
+main .annonce .image {
+    display: flex;
+    position: relative;
+    height: 280px;
+    justify-content: center;
+    margin-top: -36px;
+    overflow: hidden;
+}
+
+/*========================= Newletter =====================*/
+
+/*========================== Footer =======================*/
+
+footer {
+    width: 100%;
+    height: 275px;
+    background-color: #F6CA45;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 40px 0;
+    margin-top: 180px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li {
+    display: inline;
+    margin-inline-start: 20px;
+}
