@@ -49,6 +49,16 @@ header nav ul li {
     transition: .4s ease-in;
 }
 
+/* Hover */
+
+header nav ul li:hover {
+    transform: scale(1.1);
+}
+
+.box_header nav ul li:hover a {
+    color: #000;
+}
+
 header nav ul li a {
     font-size: 16px;
     color: #70747D;
@@ -97,6 +107,17 @@ header .box_header .post {
     height: 49px;
     border-radius: 5px;
     background: black;
+    transition: .4s ease-in;
+}
+
+/* Hover */
+header .box_header .post:hover {
+    transform: scale(1.1);
+    background-color: #F6CA45;
+}
+
+header .box_header .post:hover a {
+    color: #000;
 }
 
 header .box_header .post a {
