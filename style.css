@@ -46,7 +46,20 @@ header nav ul {
 
 header nav ul li {
     margin: 0 14px;
-    transition: .4s ease-in;
+    transition: .2s ease-in;
+    position: relative;
+}
+
+header nav ul li::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #F6CA45;
+    top: 20px;
+    left: 50%;
+    transition: .2s ease-in;
 }
 
 /* Hover */
@@ -55,14 +68,19 @@ header nav ul li:hover {
     transform: scale(1.1);
 }
 
-.box_header nav ul li:hover a {
+header nav ul li:hover::before {
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+header nav ul li:hover a {
     color: #000;
 }
 
 header nav ul li a {
     font-size: 16px;
     color: #70747D;
-    transition: .4s ease-in;
+    transition: .2s ease-in;
 }
 
 header .box_header {
@@ -159,18 +177,14 @@ main .reseau .liste1,
     height: 149px;
 }
 
-main .reseau .liste1 li {
+main .reseau .liste1 li,
+.liste2 li {
     display: flex;
     align-items: center;
     width: 160px;
     height: 47px;
-}
-
-main .reseau .liste2 li {
-    display: flex;
-    align-items: center;
-    width: 160px;
-    height: 47px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
 }
 
 main .reseau .barre_grise {
@@ -189,7 +203,13 @@ main .reseau ul li a {
     margin: 12px;
 }
 
-/*partie blog*/
+/*hover*/
+
+main .reseau ul li:hover {
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+
 /*partie droite*/
 
 main .parti_droite {
@@ -272,6 +292,7 @@ main .parti_droite .projets ul li {
     width: 112px;
     height: 24px;
     margin: 4.5px 0;
+    transition: .2s ease-in-out;
 }
 
 main .parti_droite .projets ul li a {
@@ -279,6 +300,12 @@ main .parti_droite .projets ul li a {
     font-size: 16px;
     left: -10px;
     color: #70747D;
+}
+
+/*hover*/
+
+main .parti_droite .projets ul li:hover {
+    font-weight: bolder;
 }
 
 /*=============================== POSTS =========================*/
@@ -438,6 +465,7 @@ main .annonce .annonce_btn_visited {
     height: 49px;
     border-radius: 5px;
     background-color: #000;
+    transition: .1s ease-in;
 }
 
 main .annonce .annonce_btn_visited a {
@@ -452,6 +480,7 @@ main .annonce .annonce_btn_learn {
     align-items: center;
     width: 158px;
     height: 49px;
+    transition: .1s ease-in;
 }
 
 main .annonce .annonce_btn_learn a {
@@ -465,6 +494,18 @@ main .annonce .image {
     justify-content: center;
     margin-top: -36px;
     overflow: hidden;
+}
+
+/* hover */
+
+main .annonce .annonce_btn_visited:hover,
+.annonce_btn_learn:hover {
+    transform: scale(1.05);
+}
+
+main .annonce .annonce_btn_learn:hover {
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 /*========================= Newletter =====================*/
