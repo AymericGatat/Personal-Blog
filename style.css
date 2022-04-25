@@ -6,6 +6,7 @@
     list-style: none;
     color: black;
     margin: 0;
+    line-height: 150%;
 }
 
 /*====================== BODY =====================*/
@@ -214,7 +215,7 @@ main .reseau ul li:hover {
 
 main .parti_droite {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 160px;
@@ -264,7 +265,6 @@ main .parti_droite .projets {
     border: 1px solid #DEDEDE;
     border-radius: 5px;
     box-shadow: 0 0 1px 1px #DEDEDE;
-    margin-top: 15px;
 }
 
 main .parti_droite .projets h5,
@@ -285,7 +285,7 @@ main .parti_droite .projets ul {
     flex-direction: column;
     align-items: flex-start;
     height: 147px;
-    margin: 16px 24px 24px 24px;
+    margin: 0px 24px 24px 24px;
 }
 
 main .parti_droite .projets ul li {
@@ -525,10 +525,15 @@ main .annonce .annonce_btn_learn:hover {
 
 .newsletters .gauche {
     position: relative;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: flex-start;
-    height: 100%;
+    width: 301px;
+    height: 253px;
+    margin: 10px;
 }
 
 .newsletters .gauche h2 {
@@ -540,6 +545,13 @@ main .annonce .annonce_btn_learn:hover {
 .newsletters .gauche p {
     font-size: 16px;
     color: #adadad;
+}
+
+.newsletters .gauche input {
+    padding: 12px 20px;
+    width: 280px;
+    border-radius: 5px;
+    margin: 16px 0px;
 }
 
 /*========================== Footer =======================*/
@@ -563,4 +575,12 @@ footer ul {
 footer ul li {
     display: inline;
     margin-inline-start: 20px;
+    transition: .2s ease-in-out;
+}
+
+/*Hover*/
+
+footer ul li:hover {
+    transform: scale(1.03);
+    font-weight: bolder;
 }
